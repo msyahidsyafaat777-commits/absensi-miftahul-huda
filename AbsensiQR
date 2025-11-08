@@ -14,9 +14,7 @@
   <div id="result">Belum ada.</div>
 
   <script>
-    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBw_fVU6JCwCA0nwbruUH-sMAwjUemoU87Ffhw50BmCCaqAHKuQGV_vP_PRWAPE8epfg/exec"; // GANTI DENGAN URL MILIKMU
-
-    function sendToSheet(id) {
+    const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyBw_fVU6JCwCA0nwbruUH-sMAwjUemoU87Ffhw50BmCCaqAHKuQGV_vP_PRWAPE8epfg/exec";    function sendToSheet(id) {
       fetch(`${WEB_APP_URL}?id=${id}`)
         .then(res => res.text())
         .then(txt => document.getElementById('result').innerText = txt)
